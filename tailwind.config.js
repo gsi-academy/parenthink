@@ -1,21 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.{html,js}"],
+  safelist: ["nav-scrolled"],
   theme: {
     extend: {
-      colors: {
-        primary: '#005B41',
-        secondary: '#232D3F',
-        tertiary: '#F00',
+      fontFamily: {
+        sans: ["Bricolage Grotesque", "sans-serif"],
       },
-      keyframes: {
-        zoom: {
-          '0%, 100%': { transform: 'scale(1.2)' },
-          '50%, 80%': { transform: 'scale(1)' },
-        }
+      colors: {
+        primary: "#005B41",
+        secondary: "#232D3F",
+        accent: "#C87C14",
+        parchment: "#F4F8F5",
       },
     },
   },
   plugins: [],
 }
-
